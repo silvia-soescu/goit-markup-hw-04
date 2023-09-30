@@ -6,9 +6,6 @@
     --buttons-color: #F5F4FA;
 }
 
-.generic-container {
-    max-width: 100vw;
-}
 
 h1,
 h2,
@@ -92,8 +89,6 @@ body h2 {
         justify-content: center;
         align-content: center;
         margin-right: auto;
-        margin-top: 32px;
-        margin-bottom: 32px;
         margin-left: 320px;
         font-size: 14px;
         font-weight: 500;
@@ -103,24 +98,37 @@ body h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin-right: 40px;
+    max-width: 161px;
 }
 
 .contact-number {
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
-svg {
-    width: 26px;
+.icon {
+    width: 24px;
     height: 18px;
-   padding-right: 10px;
-   align-items: center;
+   padding-right: 5px;
+   cursor: pointer;
+   fill: var(--paragraph-color);
 }
 
-.contact-email {
-    margin-right: 40px;
+.contact-email:hover svg,
+.contact-email:hover a {
+    color: var(--visited-link-color);
+    fill: var(--visited-link-color);
 }
+
+.contact-number:hover svg,
+.contact-number:hover a {
+    color: var(--visited-link-color);
+        fill: var(--visited-link-color);
+    }
+
 .header-logo span {
     color: var(--visited-link-color);
 }
@@ -154,6 +162,7 @@ svg {
 .contact-links a:active {
     color: var(--visited-link-color);
 }
+
 
 
 /* main styles */
