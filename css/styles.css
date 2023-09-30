@@ -170,7 +170,7 @@ body h2 {
     width: 1600px;
     margin: 0 auto;
     background-color: #2F303A;
-    background-image: url(../images/hero-img\.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-img\.jpeg);
     background-repeat: no-repeat;
     background-size: cover; 
 
@@ -307,6 +307,7 @@ body h2 {
 
 .team-member-card {
     max-width: 100%;
+    height: 428px;
     margin: 0 auto;
     border-radius: 4px;
     overflow: hidden;
@@ -319,10 +320,81 @@ body h2 {
     padding-top: 30px;
 }
 
-.team-member-card p {
+
+
+.social-media-contacts ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 206px;
     padding-bottom: 30px;
+    padding-top: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
+
+.social-media-contacts svg {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;    
+}
+
+.social-media-contacts svg:hover {
+fill: #fff;
+}
+
+.social-media-contacts a:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #fff;
+    background-color: #188CE8;
+    padding: 10px;
+    border-radius: 50%;
+    position: static;
+}
+
+        /* padding: 20px;
+        border-radius: 50%;
+        border: 1px solid #FFF */
+
+.customers-section {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.regular-customers-section {
+padding-top: 94px;
+}
+
+.regular-customers-section ul 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.customer-item svg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    fill: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;  
+    margin: 15px;
+   
+}
+
+.customer-item:hover svg {
+    fill: var(--visited-link-color);
+    border: 1px solid var(--visited-link-color);
+}
 /* footer styles */
 
 .global-footer {
@@ -335,6 +407,46 @@ body h2 {
     padding-bottom: 60px;
 }
 
+.footer-container {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.footer-social-links {
+    margin-left: 70px;
+    width: 206px;
+}
+
+.footer-social-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0, auto;
+}
+
+.footer-item {
+
+        margin: 5px 5px 5px 0;
+  
+}
+
+.footer-social-links svg {
+    width: 20px;
+    height: 20px; 
+    fill: #fff;
+}
+
+.footer-social-links:hover svg {
+    fill: #fff;
+    background-color: var(--visited-link-color);
+    padding: 20px;
+     border-radius: 50%;
+}
+
 .footer-logo {
     font-size: 26px;
     font-weight: 700;
@@ -343,14 +455,9 @@ body h2 {
     color: #fff;
 }
 
-.global-footer-div {
-    width: 1200px;
-    padding: 0px, 15px;
-    margin: 0 auto;
-}
-
 .footer-logo span {
     color: var(--visited-link-color)
+    
 }
 
 .footer-address {
