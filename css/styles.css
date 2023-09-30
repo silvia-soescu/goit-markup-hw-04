@@ -100,7 +100,6 @@ body h2 {
     justify-content: center;
     text-align: center;
     margin-right: 40px;
-    max-width: 161px;
 }
 
 .contact-number {
@@ -168,10 +167,15 @@ body h2 {
 /* main styles */
 
 .hero-section {
-    background-color: var(--background-color);
     width: 1600px;
     margin: 0 auto;
+    background-color: #2F303A;
+    background-image: url(../images/hero-img\.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+
 }
+
 
 .hero-section-title {
     text-align: center;
@@ -213,27 +217,22 @@ body h2 {
 
 .content-section {
     width: 1600px;
-    margin: 0 auto;
-    background-color: #fff
-}
-
-.hero-section-list {
-    width: 1200px;
-    padding: 0px 15px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center ;
     padding-top: 94px;
     margin: 0 auto;
-
 }
 
 .hero-section-list ul {
+    width: 1200px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .hero-section h3 {
@@ -246,9 +245,10 @@ body h2 {
     color: var(--paragraph-color);
     font-size: 14px;
     font-weight: 400;
-    column-gap: 30px;
     line-height: 24px;
     word-spacing: 3%;
+    width: 270px;
+    padding-right: 10px;
 }
 
 .what-we-do-section {
@@ -265,7 +265,6 @@ body h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
     padding-top: 50px;
     padding-bottom: 94px;
     margin: 0;
