@@ -332,6 +332,7 @@ margin: 0 auto;
 .social-media-contacts ul{   
  padding: 16px 15px 30px 15px;
  margin: auto;
+    
 }
 
 .contact-icon {
@@ -340,25 +341,25 @@ margin: 0 auto;
     align-items: center;
     width: 20px;
     height: 20px;
-    border: 1px solid transparent;
     border-radius: 50%;
     padding: 10px;
+   
 }
 
+.contact-icon a {
+    fill: #AFB1B8;
+}
 
 .contact-icon svg {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    
 }
 
-.social-media-contacts svg:hover {
-    fill: #fff;
-}
-
-.social-media-contacts a:hover {
+.contact-icon a:hover {
     display: flex;
     align-items: center;
+    fill: #fff;
     background-color: #188CE8;
     padding: 10px;
     border-radius: 50%;
